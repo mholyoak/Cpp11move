@@ -19,3 +19,12 @@ void InstanceContainer::TakeObject(const std::shared_ptr<InstanceLogger>& instan
     _instanceLogger = std::move(instanceLogger);
 }
 
+void InstanceContainer::PassByValue(std::shared_ptr<InstanceLogger> instanceLogger)
+{
+    _instanceLogger = instanceLogger;
+}
+
+void InstanceContainer::PassByReference(const std::shared_ptr<InstanceLogger> instanceLogger)
+{
+    _instanceLogger = instanceLogger;
+}

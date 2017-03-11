@@ -12,6 +12,12 @@ int main() {
         std::cout << "Define Instance Container" << std::endl;
         InstanceContainer myInstContainer;
 
+        std::cout << "Pass by Value" << std::endl;
+        myInstContainer.PassByValue(myInstLogger);
+
+        std::cout << "Pass by Reference" << std::endl;
+        myInstContainer.PassByValue(myInstLogger);
+
         myInstContainer.ShareObject(myInstLogger);
         std::cout << "Instance Logger pointer after sharing " << std::to_string(long(myInstLogger.get())) << std::endl;
 

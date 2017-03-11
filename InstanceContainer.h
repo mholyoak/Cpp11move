@@ -16,6 +16,10 @@ public:
 
     void TakeObject(const std::shared_ptr<InstanceLogger>& instanceLogger);
 
+    void PassByValue(std::shared_ptr<InstanceLogger> instanceLogger);
+
+    void PassByReference(const std::shared_ptr<InstanceLogger> instanceLogger);
+
 private:
     std::shared_ptr<InstanceLogger> _instanceLogger;
 };
