@@ -1,0 +1,1 @@
+Cpp11Move - is just a simple application to better understand new functionality in C++ 11.
